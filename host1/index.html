@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<meta charset='utf-8'>
+	<h4>This page will read data from http://time.cybersecurity.seu.du.</h4>
+	<script>
+		fetch('http://time.cybersecurity.seu.edu/api/date').then(res => {
+			res.json().then(res => {
+				console.log('Data through /api/date',res)
+			})
+		})
+	</script>
+	<script>
+		fetch('http://time.cybersecurity.seu.edu/api/datecors').then(res => {
+			res.json().then(res => {
+				console.log('Data through /api/datecors',res)
+			})
+		})
+	</script>
+
+</html>	
