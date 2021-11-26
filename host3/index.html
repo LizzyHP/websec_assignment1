@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<meta charset='utf-8'>
+	<h4>This page wil read data from http://time.cybersecurity.seu.edu through jsonp.</h4>
+	<script type='text/javascript'>
+		function handleTime(data){
+			console.log('Data through /api/jsonpdate',data)
+		}
+	</script>
+	<script src='http://time.cybersecurity.seu.edu/api/jsonpdate?callback=handleTime'></script>
+</html>	
